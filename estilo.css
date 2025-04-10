@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.absolute-box {
+    width: 200px; 
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 10px;
+}
+
+.absolute-text {
+    font-size: 12pt; 
+}
+
+.relative-box {
+    width: 50%; 
+    height: 100px;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 10px;
+}
+
+.relative-text {
+    font-size: 1.5em; 
+}
+
+@media screen and (max-width: 600px) {
+    .relative-text {
+        font-size: 1rem; 
+    }
+}
