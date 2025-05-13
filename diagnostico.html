@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnóstico HTML</title>
+  <link rel="stylesheet" href="diagnostico.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <h1>Formulario de Diagnóstico - HTML Básico</h1>
+  <form id="quizForm">
+    <div class="question">
+      <p>1. ¿Qué etiqueta se usa para insertar una imagen?</p>
+      <input type="radio" name="q1" value="0" required> &lt;img&gt;<br>
+      <input type="radio" name="q1" value="0"> &lt;image&gt;<br>
+      <input type="radio" name="q1" value="1"> &lt;img src="..."&gt;<br>
+    </div>
+    <div class="question">
+      <p>2. ¿Cuál es el contenedor principal en un archivo HTML?</p>
+      <input type="radio" name="q2" value="1" required> &lt;html&gt;<br>
+      <input type="radio" name="q2" value="0"> &lt;head&gt;<br>
+      <input type="radio" name="q2" value="0"> &lt;body&gt;<br>
+    </div>
+    <div class="question">
+      <p>3. ¿Qué etiqueta se utiliza para hipervínculos?</p>
+      <input type="radio" name="q3" value="1" required> &lt;a&gt;<br>
+      <input type="radio" name="q3" value="0"> &lt;link&gt;<br>
+      <input type="radio" name="q3" value="0"> &lt;href&gt;<br>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="result"></div>
+  <canvas id="resultChart" width="400" height="200"></canvas>
+  <button id="downloadPDF">Descargar PDF</button>
+
+  <script src="diagnostico.js"></script>
+</body>
+</html>
