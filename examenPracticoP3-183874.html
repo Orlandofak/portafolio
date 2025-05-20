@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calcula tu Propina</title>
+  <link rel="stylesheet" href="examenP3.css">
+</head>
+<body>
+  <div class="container">
+    <h1>¡Calcula la propina que te mereces!</h1>
+    <form id="tipForm">
+      <label for="subtotal">Total a pagar</label>
+      <input type="number" id="subtotal" required>
+ 
+      <label for="percentage">Porcentaje a aplicar</label>
+      <input list="percentages" id="percentage" required>
+      <datalist id="percentages">
+        <option value="5">
+        <option value="10">
+        <option value="15">
+        <option value="20">
+      </datalist>
+ 
+      <button type="button" onclick="calculateTip()">Mostrar el cálculo</button>
+    </form>
+ 
+    <div id="result"></div>
+  </div>
+ 
+  <script src="examenP3.js"></script>
+</body>
+</html>
